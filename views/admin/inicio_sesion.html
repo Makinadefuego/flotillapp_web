@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Conductor</title>
+    <link rel="stylesheet" href="../../css/inicio_sesion_admin.css">
+    <link rel="icon" type="image/svg+xml" href="truck.svg"> <!-- Ajusta la ruta según sea necesario -->
+</head>
+<body>
+    <div class="login-container">
+        <header>
+            <h1>Inicio de sesión</h1>
+            <button class="help-button">?</button>
+        </header>
+        <div class="user-type-switch">
+            <button class="user-type-btn">
+                Cliente
+            </button>
+            <button class="user-type-btn active">
+                Conductor
+            </button>
+        </div>
+        <h2>Administrador</h2>
+        <form class="login-form">
+            <div class="input-group">
+                <span class="ri--user-line"></span>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="input-group">
+                <span class="tabler--lock"></span>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            </div>    
+            <div class="checkbox-container">
+                <input type="checkbox" id="stay-signed-in" name="stay_signed_in">
+                <label for="stay-signed-in">Mantener sesión iniciada</label>
+            </div>
+            <p class="terms">Al iniciar sesión aceptas el procesamiento y obtención de los datos de tu cuenta</p>
+            <button type="submit" class="submit-btn">Iniciar Sesión</button>
+        </form>
+    </div>
+</body>
+</html>
