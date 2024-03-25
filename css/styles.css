@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.user-icon, .notification-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    /* se agrega espacio entre elementos */
+    justify-content: space-around;
+}
+
+.map-container {
+    width: 50%;
+    height: 300px;
+}
+
+.map-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip-info {
+    width: 40%;
+    margin: 20px 0;
+    padding: 15px;
+    
+    
+    border-radius: 5px;
+    /* Se hace el bg un poco gris */
+    background-color: rgb(17, 17, 17)
+}
+
+.trip-info h2 {
+    margin-top: 0;
+}
+
+.trip {
+    
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip h3 {
+    margin-bottom: 5px;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: right;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.icon {
+    min-height: 30px;
+    min-width: 30px;
+    height: fit-content;
+    width: fit-content;
+    background-color: #fff;
+    /* no repetir */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+}
+
+.map {
+    background-color: #000;
+    background-image: url(../images/compass.png);
+    background-size: contain;
+}
+
+.deliveries {
+    background-color: #000;
+    background-image: url(../images/camion.png);
+    background-size: contain;
+}
+
+.reports {
+    background-color: #000;
+    background-image: url(../images/reporte.png);
+    background-size: contain;
+}
+
+.messages {
+    background-color: #000;
+    background-image: url(../images/mensajeria.png);
+    background-size: contain;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.active {
+    color: #35d0a0;
+}
